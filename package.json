@@ -1,0 +1,22 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compileAndRun": "node compileAndRun.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camtittle/advent-of-code-2020.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camtittle/advent-of-code-2020/issues"
+  },
+  "homepage": "https://github.com/camtittle/advent-of-code-2020#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.10"
+  }
+}

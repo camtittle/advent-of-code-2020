@@ -1,6 +1,6 @@
-const fs = require('fs');
+import * as fs from 'fs';
 
-const part1 = (numbers) => {
+const part1 = (numbers: number[]) => {
     // brute force: try each number with every other number (On^2)
     for (const num1 of numbers) {
         for (const num2 of numbers) {
@@ -11,7 +11,7 @@ const part1 = (numbers) => {
     }
 }
 
-const part2 = (numbers) => {
+const part2 = (numbers: number[]) => {
     // brute force: try each number with every other pair of numbers (On^3)
     for (const num1 of numbers) {
         for (const num2 of numbers) {
@@ -25,8 +25,8 @@ const part2 = (numbers) => {
 }
 
 (async () => {
-    const fileName = './input.txt';
-    const file = await fs.promises.readFile(fileName, 'utf8');
+    const fileName = 'input.txt';
+    const file = await fs.promises.readFile(__dirname + '/' + fileName, 'utf8');
     const numbers = file.split('\r\n').map(str => Number.parseInt(str));
 
     const part1Result = part1(numbers);
