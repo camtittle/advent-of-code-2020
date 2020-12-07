@@ -51,7 +51,8 @@ const runCmd = (cmd, parameters) => {
 
 (async () => {
     try {
-        await runCmd('npx', ['tsc', `${day}/${day}.ts`]);
+        // await runCmd('npx', ['tsc', `${day}/${day}.ts`, '-t', 'ES6']);
+        await runCmd('npx', ['tsc']);
         
         console.log('running...')
         await runCmd('node', [`${day}/${day}.js`]);
